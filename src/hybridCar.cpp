@@ -17,6 +17,6 @@ std::string HybridCar::SwitchMode() {
 	return "SwitchMode HybridCar";
 }
 
-std::string HybridCar::ChargeBattery() {
-	return "ChargeBattery HybridCar";
+double HybridCar::FuelEfficiency() {
+	return 10;
 }

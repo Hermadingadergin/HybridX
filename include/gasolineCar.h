@@ -3,11 +3,11 @@
 
 #include "car.h"
 
-class GasolineCar : public Car
+class GasolineCar : public virtual Car
 {
 public:
 	virtual std::string Drive();
-	double FuelEfficiency();
+	virtual double FuelEfficiency();
 	virtual std::string Refuel();
 };
 
