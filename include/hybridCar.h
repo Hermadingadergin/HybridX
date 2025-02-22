@@ -3,14 +3,15 @@
 
 #include "gasolineCar.h"
 #include "electricCar.h"
+#include "car.h"
 
-class HybridCar : public GasolineCar, public ElectricCar
+class HybridCar : public GasolineCar, public ElectricCar, public Car
 {
 public:
 	std::string Drive();
 	std::string ChargeBattery();
 	std::string SwitchMode();
 	std::string Refuel();
-	using GasolineCar::FuelEfficiency;
+	std::string FuelEfficiency;
 };
 #endif
